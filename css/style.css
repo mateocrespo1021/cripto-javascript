@@ -1,0 +1,114 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    background-color:#0d2235 ;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.contenedor{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/*main*/
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    
+    height: 100vh;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.campo__label{
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.campo__select{
+   
+    font-size: 2rem;
+    color: black;
+    background-color: white;
+    padding: .2rem;
+    border: none;
+}
+
+.form__submit{
+    background-color: #33C3F0;
+    width: 100%;
+    border: none;
+    padding: 1.5rem 0;
+    font-size: 2rem;
+    margin-top: 4rem;
+}
+
+@media (min-width:768px){ 
+    .principal{
+        flex-direction: row;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .imagen{
+    flex-basis: 50%;
+    }
+    
+    .form{
+        flex-basis: 50%;
+    }
+    }
+
+/*Estilos para elementos creados*/
+
+.parrafo{
+    background-color: #7c0817;
+    color: aliceblue;
+    display: block;
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+    margin-top: 1rem;
+}
+
+.divInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15rem 0;
+    background-color: wheat;
+    padding: 1rem;
+}
+
+.btnVolver{
+    padding: 1rem;
+    background-color: #7c0817;
+    color: white;
+    border: none;
+    width: 30%;
+}

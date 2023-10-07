@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cotizar Criptomonedas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,300;1,400&family=Source+Sans+Pro:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body id="body">
+   <main id="main" class=" contenedor">
+     <div class="principal interfaz" id="cajaForm">
+       <div class="imagen">
+         <img class="imagen__img" src="img/criptomonedas.jpg" alt="criptos">
+       </div>
+       <form action="" id="form">
+           <div class="campo">
+               <label for="moneda" class="campo__label">
+                    Elige tu Moneda
+               </label>
+               <select  class="campo__select" name="" id="moneda">
+                <option value="Elige tu moneda" selected="" disabled="">Elige tu moneda</option>
+                <option value="USD">Dolar Estadounidense</option>
+                <option value="MXN">Peso Mexicano</option>
+                <option value="GBP">Libras</option>
+                <option value="EUR">Euros</option>        
+               </select>
+
+           </div>
+           <div class="campo">
+            <label for="cripto" class="campo__label">
+                 Elige tu Criptomoneda
+            </label>
+            <select class="campo__select" name="" id="criptomoneda">
+              <option value="Elige tu criptomoneda" selected="" disabled="">Elige tu criptomoneda</option>           
+            </select>
+
+        </div>
+        <input type="submit" class="form__submit" value="Cotizar">
+       </form>
+      </div>
+   </main>
+   <script src="js/app.js"></script>
+  </body>
+</html>
